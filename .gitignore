@@ -1,0 +1,4 @@
+# Local generated AI/tooling state
+.gitnexus/
+.agents/
+.claude/

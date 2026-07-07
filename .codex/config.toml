@@ -1,0 +1,16 @@
+# Project-local MCP servers for Git-Symphony. Provider/auth settings stay in the
+# user-level ~/.codex/config.toml because Codex ignores those from project config.
+developer_instructions = """
+This repository uses a local Matt Pocock engineering workflow configuration for Codex.
+When a user invokes Matt Pocock workflow skills, prefer Codex as the primary agent surface
+and read `.codex/matt-pocock-workflow.md` plus `docs/agents/*.md` before acting.
+Before code exploration, implementation, refactoring, or review work, read
+`.codex/gitnexus-workflow.md` and follow its local GitNexus workflow rules.
+"""
+
+[mcp_servers.xcode]
+command = "xcrun"
+args = ["mcpbridge"]
+startup_timeout_sec = 30
+tool_timeout_sec = 120
+enabled = true
