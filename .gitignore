@@ -1,4 +1,7 @@
 # Local generated AI/tooling state
+.codex/
 .gitnexus/
 .agents/
 .claude/
+CLAUDE.md
+skills-lock.json
